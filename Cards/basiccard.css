@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: grey;
+    font-family: monospace;
+}
+
+.container{
+    width: 350px;
+    margin: 2em 1em;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+h2 , h3{
+    margin: 0; 
+     padding: 0;
+}
+
+.heading{
+    padding: 1rem 0.5rem;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+h3{
+  line-height: 1.5rem;  
+}
+
+.description{
+    padding: 0 0.5em;
+    margin-bottom: 1rem ;
+}
+
+button{
+    padding: 0 0.5em;
+    margin: 0 0.3rem;
+    border: none;
+    font-weight: 700;
+    color: blueviolet;
+    background-color: none;
+
+}
+
+.action{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 0.5em 0.2em;
+    /* margin: 0 0; */
+    
+}
+
+i{
+    padding: 0.5em ;
+    margin: 0 0.1em;
+}
+
