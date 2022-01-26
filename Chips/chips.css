@@ -78,12 +78,14 @@ li{
     border-radius: 40px;
     
     margin: 2rem auto;
-    
     display: flex;
     flex-direction: column;
     
     align-items: flex-start;
     flex-wrap: wrap;
+    
+    
+    /* overflow: hidden; */
   
 }
 
@@ -91,6 +93,8 @@ li{
 
 .container-three  li{
    display: block;
-    width: 150px;
+   
+    width: 100%;
+    /* flex-wrap: wrap; */
     
 }
