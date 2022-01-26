@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(189, 189, 189, 0.541);
+    font-family: 'Roboto Slab', serif; 
+    
+}
+:root{
+    font-size: 16px;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    border: 1px solid gray;
+    max-width: 50%;
+    margin: 1rem auto;
+    /* padding: 0.5em 1em; */
+    
+}
+
+.wrapper .title-box h2{
+    padding: 0.5em 1em;
+    margin: 0.3em auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tag{
+    border: 1px solid grey;
+    margin-bottom: 1.5rem;
+    border-radius: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* display: flex; */
+    /* justify-content: space-around; */
+
+}
+
+.tag ul {
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+li{
+    display: inline-block;
+    padding: 0.5em;
+    background-color:#ff33709c;
+    
+    color:black;
+
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+}
+
+/* 2nd container */
+.container-two{
+    width: 50%; 
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+/* third container  */
+
+.container-three{
+    width: 50%;
+    border: 1px solid grey;
+    
+    border-radius: 40px;
+    
+    margin: 2rem auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.container-three  li{
+   display: block;
+    width: 150px;
+    
+}
