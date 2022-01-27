@@ -6,6 +6,16 @@ body{
     font-family: monospace;
 }
 
+main{
+    
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  
+}
+
 .container{
     width: 350px;
     margin: 2em 1em;
@@ -16,9 +26,11 @@ body{
 
 }
 
-img{
+.container img{
+    
+    height: 250px;
     width: 100%;
-    height: auto;
+   
     
 }
 
@@ -28,10 +40,12 @@ img{
 h2 , h3{
     margin: 0; 
      padding: 0;
+     color: black;
 }
 
 .heading{
     padding: 1rem 0.5rem;
+    /* position: absolute; */
 }
 
 h2{
@@ -47,12 +61,13 @@ h3{
 }
 
 button{
-    padding: 0 0.5em;
+    padding: 1em 0.5em;
     margin: 0 0.3rem;
     border: none;
     font-weight: 700;
     color: blueviolet;
-    background-color: none;
+    background-color: rgba(173, 216, 230, 0.171);
+    cursor: pointer;
 
 }
 
@@ -71,3 +86,90 @@ i{
     margin: 0 0.1em;
 }
 
+/* 2nd photo */
+
+.image{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-bottom:1rem ;
+    
+}
+
+
+
+.overlap{
+    position: absolute;
+    z-index: 1;
+    
+    bottom: 0;
+}
+
+
+.overlap > * {
+    color: whitesmoke;
+}
+
+/* card five */
+
+.card-five{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 0.5em 0.2em;
+    justify-content: flex-end;
+    /* margin: 0 0; */
+    
+}
+
+/* 6ht card */
+
+.container-sixth {
+display: flex;
+height: 200px;
+margin: 2em 1em;
+background-color: aliceblue;
+width: 350px;
+/* width: 30%; */
+flex-direction: column;
+/* position: relative; */
+}
+
+/* .container{
+    width: 350px;
+    margin: 2em 1em;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+
+} */
+.sixth-card{
+    display: flex;
+    gap: 20px;
+    /* padding-right: 0.5em; */
+    
+}
+
+ .side-text > *{
+    padding: 0.5em 0.5em;
+    /* margin: 1em; */
+    /* font-size:  20px; */
+}
+
+.sixth-card img{
+    width: 110px;
+    height: 110px;
+
+
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 0.5em; */
+    
+    
+    
+}
