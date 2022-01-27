@@ -28,18 +28,18 @@ body{
 
 
 .main-navBar{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     background-color: var(--primary-background-color);
     color: whitesmoke;
     padding: 1rem 1.5rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 
 .main-body{
-    border: 1px solid greenyellow;
-    margin-bottom: 2rem;
+    /* border: 1px solid greenyellow;
+    margin-bottom: 2rem; */
 }
 
 
@@ -47,8 +47,8 @@ body{
 
 /* side bar starts from here */
 .sideBar{
-    border: 1px solid orange;
-    background-color: var(--secondary-background-color);
+    /* border: 1px solid orange;
+    background-color: var(--secondary-background-color); */
     width: 35%;
 }
 
@@ -64,34 +64,36 @@ h3{
     margin-block-end: 0;
 }
 
-.title p{
-    color: grey;
-    margin-block-start: 0;
-}
-
-.itemList{
-    padding: 1rem;
-    margin-right: 1rem auto;
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-
-a{
-    display: block;
-   
+.main-body p{
+    color: black;
+    padding-left: 1rem;
     
-    padding: 1rem 0;
-    text-decoration: none;
-    color: grey;
-    margin-bottom: 2px;
 }
+
+
 i{
     display:inline;
-
     color: grey;
     padding: 0 1rem;
-    margin: 2px 8px;
+    margin: 0 8px;
+   
+}
+
+ul{
+    padding-inline-start: 0;
+
+}
+
+ul p{
+padding: 0 0.5rem;
+font-weight: 300;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    padding-right: 6rem;
+    color: grey;
 }
