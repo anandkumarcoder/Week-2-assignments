@@ -2,7 +2,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--primary-font)
+    font-family: var(--primary-font);
+    overflow-y: scroll;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -13,17 +14,38 @@ body{
     --primary-font: 'Roboto', sans-serif;
 }
 
+/* adding scroll bar */
+/* ::-webkit-scrollbar {
+    width: 15px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+
+  /* main body */
 .container{
     border: 1px solid black;
     height: 100%;
     display: flex;
+   
+   
 }
 
 .main-section{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     font-weight: 500;
+    border-left: 1px solid black;;
+    flex-shrink: 1.5;
 }
 
 
@@ -40,21 +62,37 @@ body{
 .main-body{
     /* border: 1px solid greenyellow;
     margin-bottom: 2rem; */
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
 }
 
-
+.main-body p{
+    color: black;
+    padding-left: 1rem;
+    
+}
 
 
 /* side bar starts from here */
 .sideBar{
     /* border: 1px solid orange;
     background-color: var(--secondary-background-color); */
-    width: 35%;
+    display: flex;
+    flex-direction: column;
+    
+    width: 45%;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: var(--secondary-background-color);
+    flex-wrap: wrap;
+
 }
 
 
 .title{
     padding: 0 1rem;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -64,11 +102,7 @@ h3{
     margin-block-end: 0;
 }
 
-.main-body p{
-    color: black;
-    padding-left: 1rem;
-    
-}
+
 
 
 i{
@@ -81,6 +115,7 @@ i{
 
 ul{
     padding-inline-start: 0;
+    
 
 }
 
@@ -96,4 +131,6 @@ li{
     padding: 1rem 0;
     padding-right: 6rem;
     color: grey;
+    width: 100%;
+    flex-wrap: wrap;
 }
