@@ -7,35 +7,23 @@ body{
 }
 
 main{
-    
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-  
 }
 
 .container{
     width: 350px;
-    margin: 2em 1em;
-    
+    margin: 2em 1em; 
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
-
 }
 
 .container img{
-    
     height: 250px;
     width: 100%;
-   
-    
 }
-
-
-
 
 h2 , h3{
     margin: 0; 
@@ -45,7 +33,6 @@ h2 , h3{
 
 .heading{
     padding: 1rem 0.5rem;
-    /* position: absolute; */
 }
 
 h2{
@@ -75,16 +62,16 @@ button{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* background-color: antiquewhite; */
     padding: 0.5em 0.2em;
-    /* margin: 0 0; */
-    
 }
 
 i{
     padding: 0.5em ;
     margin: 0 0.1em;
 }
+
+
+
 
 /* 2nd photo */
 
@@ -102,8 +89,7 @@ i{
 
 .overlap{
     position: absolute;
-    z-index: 1;
-    
+    z-index: 1; 
     bottom: 0;
 }
 
@@ -112,16 +98,19 @@ i{
     color: whitesmoke;
 }
 
+
+
+
 /* card five */
 
 .card-five{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* background-color: antiquewhite; */
+    
     padding: 0.5em 0.2em;
     justify-content: flex-end;
-    /* margin: 0 0; */
+    
     
 }
 
@@ -133,24 +122,14 @@ height: 200px;
 margin: 2em 1em;
 background-color: aliceblue;
 width: 350px;
-/* width: 30%; */
 flex-direction: column;
-/* position: relative; */
+
 }
 
-/* .container{
-    width: 350px;
-    margin: 2em 1em;
-    
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
 
-} */
 .sixth-card{
     display: flex;
-    /* gap: 5px; */
-    /* padding-right: 0.5em; */
+    
     
 }
 
@@ -160,33 +139,10 @@ flex-direction: column;
 
   .side-text  h2 {
      margin: 0.5em auto;
-    /* padding: 0.2em 0.5em;
-    margin: 0.5em auto; */
-    /* margin: 1em; */
-    /* font-size:  20px; */
-    /* margin-block-start: 0; 
-}
 
-.side-text  h3 {
-    line-height: 2rem;
-     
-    /* padding: 0em 0.8em; */
-    /* margin-block-start: 0; */
-    /* margin: 0.2em auto; */
-    /* margin: 1em; */
-    /* font-size:  20px; */
 } 
 
 .sixth-card img{
     width: 110px;
     height: 110px;
-
-
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    margin-right: 0.5em; */
-    
-    
-    
 }
