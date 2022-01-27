@@ -1,18 +1,24 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--primary-font);
-    overflow-y: scroll;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
     --primary-background-color: rgb(98, 0, 238);
-    --secondary-background-color: rgb(255, 255, 255);
+    --secondary-background-color: white;
     --primary-font: 'Roboto', sans-serif;
 }
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    /* overflow-y: scroll; */
+}
+
+
+
+
 
 /* adding scroll bar */
 /* ::-webkit-scrollbar {
@@ -34,7 +40,9 @@ body{
   /* main body */
 .container{
     border: 1px solid black;
-    height: 100%;
+    /* height: 100%; */
+
+    height: 500px;
     display: flex;
    
    
@@ -46,6 +54,10 @@ body{
     font-weight: 500;
     border-left: 1px solid black;;
     flex-shrink: 1.5;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 500px;
+    z-index: -1;
 }
 
 
@@ -55,6 +67,8 @@ body{
     color: whitesmoke;
     padding: 1rem 1.5rem;
     font-weight: 400;
+    width: 100%;
+
     /* margin-bottom: 2rem; */
 }
 
@@ -62,10 +76,13 @@ body{
 .main-body{
     /* border: 1px solid greenyellow;
     margin-bottom: 2rem; */
-    overflow: hidden;
-    overflow-y: scroll;
+    /* position: relative; */
+    
     height: 100%;
 }
+/* .main-child{
+    position: relative;
+} */
 
 .main-body p{
     color: black;
@@ -78,21 +95,29 @@ body{
 .sideBar{
     /* border: 1px solid orange;
     background-color: var(--secondary-background-color); */
+    /* position: relative; */
+   
     display: flex;
     flex-direction: column;
     
-    width: 45%;
-    overflow: hidden;
-    overflow-y: scroll;
+    width: 35%;
+    
     background-color: var(--secondary-background-color);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
+
+.sideContainer{
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
 
 
 .title{
     padding: 0 1rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 h3{
@@ -107,17 +132,36 @@ h3{
 
 i{
     display:inline;
-    color: grey;
+    color: rgba(39, 38, 38, 0.37);
     padding: 0 1rem;
     margin: 0 8px;
+    
    
 }
 
 ul{
     padding-inline-start: 0;
+    cursor: pointer;
     
 
+    
 }
+
+
+
+
+
+li:hover{
+    
+    background-color:rgba(128, 128, 128, 0.13);
+}
+
+ /* li:active{
+    background-color: blueviolet; 
+    color: blueviolet;
+} */
+
+
 
 ul p{
 padding: 0 0.5rem;
@@ -127,10 +171,12 @@ font-weight: 300;
 li{
     list-style: none;
     display: flex;
+    gap: 20px;
     align-items: center;
     padding: 1rem 0;
     padding-right: 6rem;
     color: grey;
     width: 100%;
     flex-wrap: wrap;
+    font-size: 1.2rem;
 }
