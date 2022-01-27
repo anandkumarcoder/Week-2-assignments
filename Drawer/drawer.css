@@ -2,7 +2,17 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font)
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-background-color: rgb(98, 0, 238);
+    --secondary-background-color: rgb(255, 255, 255);
+    --primary-font: 'Roboto', sans-serif;
+}
+
 
 .container{
     border: 1px solid black;
@@ -13,18 +23,75 @@ body{
 .main-section{
     border: 1px solid red;
     box-sizing: border-box;
+    font-weight: 500;
 }
 
 
-.main-section{
+.main-navBar{
     border: 1px solid blueviolet;
+    background-color: var(--primary-background-color);
+    color: whitesmoke;
+    padding: 1rem 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 
-.main-section{
+.main-body{
     border: 1px solid greenyellow;
+    margin-bottom: 2rem;
 }
 
+
+
+
+/* side bar starts from here */
 .sideBar{
     border: 1px solid orange;
+    background-color: var(--secondary-background-color);
+    width: 35%;
+}
+
+
+.title{
+    padding: 0 1rem;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: 300;
+    font-family: var(--primary-font);
+    margin-block-end: 0;
+}
+
+.title p{
+    color: grey;
+    margin-block-start: 0;
+}
+
+.itemList{
+    padding: 1rem;
+    margin-right: 1rem auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+a{
+    display: block;
+   
+    
+    padding: 1rem 0;
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 2px;
+}
+i{
+    display:inline;
+
+    color: grey;
+    padding: 0 1rem;
+    margin: 2px 8px;
 }
