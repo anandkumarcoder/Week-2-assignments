@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font-color: rgb(247, 247, 247);
+    --primary-font: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: azure;
+    justify-content: space-between;
+    align-items: center;
+    width:50vw;
+    background-color:  rgb(98, 0, 238);
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+button{
+    border: none;
+    background-color:  rgba(99, 0, 238, 0.459);
+  
+    cursor: pointer;
+    
+} 
+    
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+a{
+   color: var(--primary-font-color); 
+}
+
+.left-side .material-icons{
+ background-color: rgb(98, 0, 238) ;
+ /* fill:  rgb(98, 0, 238); */
+ color: var(--primary-font-color); 
+
+}
